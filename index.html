@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#070708" />
+    <meta
+      name="description"
+      content="Rolling scroll transition — stacked panels tumble on a 3D cylinder as you scroll."
+    />
+    <title>Rolling Scroll — Meridian Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#stage">Skip to stage</a>
+
+    <header class="chrome">
+      <p class="chrome-title">Rolling scroll</p>
+      <p class="chrome-caption">
+        Stacked panels tumble on a 3D cylinder — scroll, and the next face rolls into view.
+      </p>
+    </header>
+
+    <nav class="dots" id="dots" aria-label="Panel index"></nav>
+
+    <div class="stage" id="stage" aria-live="polite">
+      <div class="rig" id="rig"></div>
+    </div>
+
+    <div class="rail" id="rail" aria-hidden="true"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
